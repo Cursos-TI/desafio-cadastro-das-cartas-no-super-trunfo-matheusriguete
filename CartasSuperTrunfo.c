@@ -14,6 +14,8 @@ int main() {
     float area1;
     float pib1;
     int pontos1;
+    float densidade1;
+    float percapita1;
     char estado2[20];
     char codigo2[20];
     char cidade2[20];
@@ -21,6 +23,8 @@ int main() {
     float area2;
     float pib2;
     int pontos2;
+    float densidade2;
+    float percapita2;
 //%d: Imprime um inteiro no formato decimal.
  
 //%i: Equivalente a %d.
@@ -67,6 +71,8 @@ int main() {
     printf("Digite o Numero de pontos Turísticos:\n");
 
     scanf("%d" , &pontos1);
+
+    
 
 
 
@@ -118,7 +124,11 @@ int main() {
 
     printf("-Nome da Cidade: %s \n-População: %d \n" , cidade1, populacao1);
 
-    printf("-Área: %.2f km² \n-PIB: %.2f \n-Pontos turísticos: %d \n" , area1, pib1, pontos1);
+    printf("-Área: %.2f km² \n-PIB: %.2f bilhões de reais \n-Pontos turísticos: %d \n" , area1, pib1, pontos1);
+   densidade1 = (populacao1 / area1);
+    printf("-Densidade Populacional: %.2f hab/km² \n", densidade1);
+    percapita1= (pib1 / populacao1);
+    printf("-PIB per Capita: %.2f Reais \n", percapita1);
 
 
     printf("Carta 2: \n");
@@ -128,6 +138,10 @@ int main() {
     printf("-Nome da Cidade: %s \n-População: %d \n" , cidade2, populacao2);
 
     printf("-Área: %.2f km² \n-PIB: %.2f \n-Pontos turísticos: %d \n" , area2, pib2, pontos2);
+    densidade2 = (populacao2 / area2);
+    printf("-Densidade Populacional: %.2f hab/km² \n", densidade2);
+    percapita2= (pib2 / populacao2);
+    printf("-PIB per Capita: %.2f Reais \n", percapita2);
 
 
 
