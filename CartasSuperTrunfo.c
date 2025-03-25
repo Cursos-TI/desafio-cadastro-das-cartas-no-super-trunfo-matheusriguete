@@ -17,6 +17,7 @@ int main() {
     float densidade1;
     float percapita1;
     float superpoder1; 
+    float inverso1;
 
     char estado2[20];
     char codigo2[20];
@@ -28,6 +29,7 @@ int main() {
     float densidade2;
     float percapita2;
     float superpoder2;
+    float inverso2;
     
 //%d: Imprime um inteiro no formato decimal.
  
@@ -133,7 +135,8 @@ int main() {
     printf("-Densidade Populacional: %.2f hab/km² \n", densidade1);
     percapita1= (pib1 / populacao1);
     printf("-PIB per Capita: %.2f Reais \n", percapita1);
-    superpoder1 = (1 / densidade1 + populacao1 + area1 + pib1 + percapita1 + pontos1 );
+    inverso1= (1 / densidade1);
+    superpoder1 = (inverso1 + populacao1 + area1 + pib1 + percapita1 + pontos1 );
     printf("-Super Poder: %.2f \n", superpoder1);
 
 
@@ -149,7 +152,8 @@ int main() {
     printf("-Densidade Populacional: %.2f hab/km² \n", densidade2);
     percapita2 = (pib2 / populacao2);
     printf("-PIB per Capita: %.2f Reais \n", percapita2);
-    superpoder2 = ( 1 / densidade2 + populacao2 + area2 + pib2 + percapita2 + pontos2);
+    inverso2= (1 / densidade2);
+    superpoder2 = ( inverso2 + populacao2 + area2 + pib2 + percapita2 + pontos2);
     printf("-Super Poder: %.2f \n", superpoder2);
 
     printf("Comparação de Cartas: \n");
@@ -173,8 +177,6 @@ int main() {
 
     return 0;
 }
-
-
 
 
    
